@@ -1,0 +1,26 @@
+body {
+  background-color: #e6846f;
+}
+h1{
+font-size:50;
+text-align:center;
+}
+
+
+img {
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 10px;
+  width: 300px;
+}
+p{
+padding:10px;
+letter-spacing:2px;
+}
+ul{
+padding:30px;
+letter-spacing:2px;
+}
+#image{
+padding:5px;
+}
