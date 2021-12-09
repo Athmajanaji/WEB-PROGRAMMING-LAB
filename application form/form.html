@@ -1,0 +1,106 @@
+<html>
+<head>
+<title>Job Application Form</title>
+<link rel="stylesheet"  href="mystyle.css">
+</head>
+<body>
+<center>
+<u><h1>Job Application Form</h1></u>
+<form method="GET">
+<table cellspacing="30">
+
+<tr>
+<th> <label>Name<sup class="star">*</sup></label><br></th>
+<td ><input type="text" placeholder="First Name" required size="10">&nbsp;
+<input id="a" type="text" placeholder="Middle Name" required size="10">&nbsp;
+<input id="a" type="text" placeholder="Last Name" required size="10"></td>
+</tr>
+
+<tr>
+<th style="padding:10px">Address</th>
+<td><textarea cols=30 rows=3></textarea></td>
+<td></td>
+</tr>
+
+<tr>
+<th style="padding:10px">Date of Birth<sup class="star">*</sup></th>
+<td><input type="date" required>&nbsp;&nbsp;&nbsp;
+<b>Age</b>
+<input type="number" size="1px"></td>
+</tr>
+
+
+<tr>
+<th colspan="1"> <label>Gender</label><br></th>
+<td>Male<input type="radio" name="g" value="M">&nbsp;
+Female<input type="radio" name="g" value="F"></td>
+</tr>
+
+<tr>
+<th colspan="1"> <label>Martial Status</label><br></th>
+<td>Single<input type="radio" name="m" value="M">&nbsp;
+Married<input type="radio" name="m" value="F"></td>
+</tr>
+
+<tr>
+<th style="padding:10px">Email</th>
+<td><input type="email" required></td>
+<td></td>
+</tr>
+
+<tr>
+<th style="padding:10px">Phone<sup class="star">*</sup></th>
+<td><input type="number" required></td>
+<td></td>
+</tr>
+
+<tr>
+<th style="padding:10px">Post You are applying for<sup class="star">*</sup></th>
+<td><select name="month" id="month">
+    <option value="Choose"> </option>
+    <option value="jan">Shift Manager</option>
+    <option value="feb">Associate Manager</option>
+    <option value="march">Other</option>
+  </select></td>
+<td></td>
+</tr>
+
+<tr>
+<th style="padding:10px">If Other,Kindly Specify</th>
+<td><input type="text" size="30"></td>
+
+</tr>
+
+<tr>
+<th style="padding:10px">Preferred Working Mode<sup class="star">*</sup></th>
+<td><select name="month" id="month">
+    <option value="Choose"> </option>
+    <option value="jan">Part-Time</option>
+    <option value="feb">Full Time</option>
+  </select></td>
+<td></td>
+</tr>
+
+<tr>
+<th style="padding:10px">Upload Your CV<sup class="star">*</sup></th>
+<td><input type="file" ></td>
+
+</tr>
+
+<tr>
+<td></td>
+<th  colspan ="2"style="padding:10px"><button value="Apply For Job" onclick="myFunction()">Apply </button></th>
+<td></td>
+</tr>
+
+</table>
+</form>
+</center>
+<script>
+function myFunction(){
+  alert("Successfully Uploaded");
+}
+</script>
+
+</body>
+</html>

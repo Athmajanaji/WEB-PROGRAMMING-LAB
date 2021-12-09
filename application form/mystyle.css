@@ -1,0 +1,17 @@
+body{
+background-color:#7d7d7d;
+}
+table{
+padding:10px;
+}
+td{
+padding:5px;
+}
+th{
+text-align:left;
+padding:10px;
+}
+
+.star{
+color:red;
+}
