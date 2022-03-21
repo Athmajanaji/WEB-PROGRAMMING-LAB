@@ -415,7 +415,7 @@ INSERT INTO
 dependents(dependent_id,first_name,last_name,relationship,employee_id)
 VALUES (30,'Sandra','Taylor','Child',176);
 
-/*
+
 select * from regions;
 select * from dependents;
 select * from employees;
@@ -432,8 +432,11 @@ select first_name as Name from employees where job_id = 17;
 select first_name as Name from employees where department_id = 8;
 select department_name as Departments from departments order by department_name desc;
 select first_name,last_name from employees where last_name like 'K%';
+select first_name from employees where hire_date like '1995-' or hire_date like '1996-' or hire_date like '1997-';
 select job_title as JOBS,min_salary from jobs where min_salary<5000;
 select lower(email) from employees;
-select first_name from employees where hire_date like '1995-';*/
+select first_name from employees where hire_date like '1995-';
+insert into employees values(207,'Paul','Newton','paulnewton@gmail.com','515.123.8181','1994-06-07',1,8300.00,null,11);
+delete from departments where department_name='shipping';
 
 
