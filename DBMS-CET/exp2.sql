@@ -355,7 +355,7 @@ VALUES (10,'Christian','Urman','Child',112);
 INSERT INTO
 dependents(dependent_id,first_name,last_name,relationship,employee_id)
 VALUES (11,'Zero','Popp','Child',113);
-INSERT INTO
+INSERT INTOselect first_name from employees where hire_date like '1995-' or hire_date like '1996-' or hire_date like '1997-';
 dependents(dependent_id,first_name,last_name,relationship,employee_id)
 VALUES (12,'Karl','Greenberg','Child',108);
 INSERT INTO
@@ -432,7 +432,7 @@ select first_name as Name from employees where job_id = 17;
 select first_name as Name from employees where department_id = 8;
 select department_name as Departments from departments order by department_name desc;
 select first_name,last_name from employees where last_name like 'K%';
-select first_name from employees where hire_date like '1995-' or hire_date like '1996-' or hire_date like '1997-';
+select first_name from employees where year(hire_date) between 1995 and 1998;
 select job_title as JOBS,min_salary from jobs where min_salary<5000;
 select lower(email) from employees;
 select first_name from employees where hire_date like '1995-';
