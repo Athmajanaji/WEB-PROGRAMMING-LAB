@@ -5,5 +5,6 @@ mydb = c['exam']
 mycol = mydb["students"]
 
 
-for data in mycol.find({},{"id":2}):
-    print(data)
+for data in mycol.find({"Vaccination_status" : "not vaccinated",}):
+    print(data["Name"])
+    print(data["Phone"])
