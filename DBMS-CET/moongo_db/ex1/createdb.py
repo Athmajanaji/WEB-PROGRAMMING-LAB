@@ -1,0 +1,8 @@
+import pymongo
+
+myclient = pymongo.MongoClient('mongodb://localhost:27017/')
+
+mydb = myclient['exam']
+
+mycol = mydb["students"]
+
